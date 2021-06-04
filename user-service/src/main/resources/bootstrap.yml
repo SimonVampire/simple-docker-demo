@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: user-service
+  profiles:
+    active: default
+server:
+  port: 8070
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    #\u5BA2\u6237\u7AEF\u5728\u6CE8\u518C\u65F6\u4F7F\u7528\u81EA\u5DF1\u7684IP\u800C\u4E0D\u662F\u4E3B\u673A\u540D\uFF0C\u7F3A\u7701\uFF1Afalse
+    prefer-ip-address: true
+    # \u670D\u52A1\u540D\uFF0C\u9ED8\u8BA4\u53D6 spring.application.name \u914D\u7F6E\u503C\uFF0C\u5982\u679C\u6CA1\u6709\u5219\u4E3A unknown
+#    eureka.instance.appname = user-service
+    # \u5B9E\u4F8BID
+#    eureka.instance.instance-id = user-service
+    #\u670D\u52A1\u7EED\u7EA6\uFF08\u5FC3\u8DF3\uFF09\u9891\u7387\uFF0C\u5355\u4F4D\uFF1A\u79D2\uFF0C\u7F3A\u770130
+    lease-renewal-interval-in-seconds: 1
+    #\u670D\u52A1\u5931\u6548\u65F6\u95F4\uFF0C\u5931\u6548\u7684\u670D\u52A1\u5C06\u88AB\u5254\u9664\u3002\u5355\u4F4D\uFF1A\u79D2\uFF0C\u9ED8\u8BA4\uFF1A90
+    lease-expiration-duration-in-seconds: 2
+    # \u72B6\u6001\u9875\u9762\u7684URL\uFF0C\u76F8\u5BF9\u8DEF\u5F84\uFF0C\u9ED8\u8BA4\u4F7F\u7528 HTTP \u8BBF\u95EE\uFF0C\u5982\u9700\u4F7F\u7528 HTTPS\u5219\u8981\u4F7F\u7528\u7EDD\u5BF9\u8DEF\u5F84\u914D\u7F6E\uFF0C\u7F3A\u7701\uFF1A/info
+#    status-page-url-path: /info
+    # \u5065\u5EB7\u68C0\u67E5\u9875\u9762\u7684URL\uFF0C\u76F8\u5BF9\u8DEF\u5F84\uFF0C\u9ED8\u8BA4\u4F7F\u7528 HTTP \u8BBF\u95EE\uFF0C\u5982\u9700\u4F7F\u7528 HTTPS\u5219\u8981\u4F7F\u7528\u7EDD\u5BF9\u8DEF\u5F84\u914D\u7F6E\uFF0C\u7F3A\u7701\uFF1A/health
+#    health-check-url-path: /health
+
+

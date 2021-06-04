@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: sales-service
+  profiles:
+    active: default
+server:
+  port: 8060
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    #客户端在注册时使用自己的IP而不是主机名，缺省：false
+    prefer-ip-address: true
+    # 服务名，默认取 spring.application.name 配置值，如果没有则为 unknown
+    #    eureka.instance.appname = user-service
+    # 实例ID
+    #    eureka.instance.instance-id = user-service
+    #服务续约（心跳）频率，单位：秒，缺省30
+    lease-renewal-interval-in-seconds: 1
+    #服务失效时间，失效的服务将被剔除。单位：秒，默认：90
+    lease-expiration-duration-in-seconds: 2
+    # 状态页面的URL，相对路径，默认使用 HTTP 访问，如需使用 HTTPS则要使用绝对路径配置，缺省：/info
+#    status-page-url-path: /info
+    # 健康检查页面的URL，相对路径，默认使用 HTTP 访问，如需使用 HTTPS则要使用绝对路径配置，缺省：/health
+#    health-check-url-path: /health
+
+
