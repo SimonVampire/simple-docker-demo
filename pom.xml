@@ -24,6 +24,7 @@
         <module>eureka</module>
         <module>user-service</module>
         <module>sales-service</module>
+        <module>common-domain</module>
     </modules>
 
     <dependencyManagement>

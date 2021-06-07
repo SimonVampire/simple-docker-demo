@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="user-service" />
+        <module name="common-domain" />
         <module name="sales-service" />
         <module name="eureka" />
       </profile>
@@ -14,6 +15,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common-domain" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="sales-service" options="-parameters" />
       <module name="simple-docker-demo" options="-parameters" />
