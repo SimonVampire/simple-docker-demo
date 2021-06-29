@@ -6,7 +6,6 @@
         <groupId>cn.sevendream</groupId>
         <artifactId>simple-docker-demo</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath/>
     </parent>
 
     <groupId>cn.sevendream</groupId>
