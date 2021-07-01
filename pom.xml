@@ -39,14 +39,14 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    <repositories>
-        <!-- 阿里仓库 -->
+<!--    <repositories>
+        &lt;!&ndash; 阿里仓库 &ndash;&gt;
         <repository>
             <id>maven-ali</id>
             <name>maven-ali</name>
             <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
         </repository>
-    </repositories>
+    </repositories>-->
 
     <build>
         <pluginManagement>
