@@ -12,7 +12,7 @@
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.SR5</spring-cloud.version>
-        <docker.image.prefix>mydocker</docker.image.prefix>
+        <docker.image.prefix>simon_zhang</docker.image.prefix>
     </properties>
     <parent>
         <groupId>org.springframework.boot</groupId>
